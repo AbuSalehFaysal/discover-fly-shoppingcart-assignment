@@ -55,3 +55,12 @@ let secondMinusButton = document.getElementById("second-minus-button");
 secondMinusButton.addEventListener("click", function () {
     decreaseValuePrice("economy-class-value", "economy-class-price", "first-class-price", "sub-total", "vat", "total", 100);
 });
+
+let buttonBook = document.getElementById("book");
+buttonBook.addEventListener("click", function(){
+    document.getElementById("booking-of-first-class").innerText = document.getElementById("first-class-value").value;
+    document.getElementById("booking-of-economy-class").innerText = document.getElementById("economy-class-value").value;
+    document.getElementById("subtotal-booking-cost").innerText = document.getElementById("sub-total").innerText;
+    document.getElementById("booking-vat").innerText = document.getElementById("vat").innerText;
+    document.getElementById("total-booking-cost").innerText = document.getElementById("total").innerText;
+});

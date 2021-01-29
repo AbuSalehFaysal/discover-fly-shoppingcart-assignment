@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+            <button id="book" type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
                 Book Now
             </button>
         </div>
@@ -120,18 +120,19 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Congartulations</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Discover Fly</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Dear User, You Have Booked <span id="confirmation-first-class">0</span> First Class and <span>0</span> Economy Class Ticket.</p>
-                        <p>You sub total ticket cost is $<span>0</span> and including 10% VAT, you total ticket cost is $<span>0</span></p>
+                        <p>Dear User,</p>
+                        <p>You Have Booked <span id="booking-of-first-class">0</span> First Class and <span id="booking-of-economy-class">0</span> Economy Class Ticket.</p>
+                        <p>You sub total ticket cost is $<span id="subtotal-booking-cost">0</span> and including 10% VAT($<span id="booking-vat">0</span>), you total ticket cost is $<span id="total-booking-cost">0</span></p>
+                        <p>Thank You.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
