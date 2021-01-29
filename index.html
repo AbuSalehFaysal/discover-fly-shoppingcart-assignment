@@ -77,7 +77,8 @@
                                 class="fas fa-plus"></i></button>
                         <button id="second-minus-button" class="btn btn-primary btn-sm"><i
                                 class="fas fa-minus"></i></button>
-                        <span class="badge badge-secondary">Economy-Class: $<span id="economy-class-price">0</span></span>
+                        <span class="badge badge-secondary">Economy-Class: $<span
+                                id="economy-class-price">0</span></span>
                     </p>
                 </div>
             </div>
@@ -109,7 +110,31 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                Book Now
+            </button>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Congartulations</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Dear User, You Have Booked <span id="confirmation-first-class">0</span> First Class and <span>0</span> Economy Class Ticket.</p>
+                        <p>You sub total ticket cost is $<span>0</span> and including 10% VAT, you total ticket cost is $<span>0</span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="booking-content">
@@ -119,6 +144,15 @@
                 voluptatibus quam</p>
         </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
         <script src="script.js"></script>
 </body>
 
